@@ -10,41 +10,48 @@
 }
 /* debug class */
 .debug .left_main {
-    background-color: aqua;
+    background-color: var(--spf-black);
     min-width: 230px;
-    min-height: 1010px;
 }
 
 .debug .right_main {
     background-color:var(--spf-primary);
-    width: 100%;
-    padding: 0 1rem;
+    width: calc(100vw - 230px);
+    padding: 0 0.5rem;
+    overflow: auto;
 }
 
 .debug .bottom_bar {
-    background-color: palevioletred;
+    background-color: var(--spf-dark-light);
     height: 90px;
 }
 
 .debug .upgrade{
-
+    position: sticky;
+    top: 0;
     width: 100%;
-    height: 92px;
-    background-color: bisque;
+    height: 90px;
+    background-color:#00000088;
 }
 
 .container-main{
     background-color: var(--spf-primary);
-    display: block;
-
+    height: calc(100vh - 90px);
 }
 
 
 .choice li {
     gap: 2rem;
-    padding: 0 0.5rem;
-    color: var(--spf-dark);
+    padding: 0.5rem 0.5rem;
+    color: var(--spf-light);
     text-transform: uppercase;
+}
+
+.btm-line{
+    width: 45%;
+    margin: -0.5rem auto;
+    border-bottom: 2px solid  #adff2f;
+
 }
 
 .recently h3{
@@ -77,11 +84,11 @@
 }
 
 .card p{
-    color: var(--spf-dark);
+    color: var(--spf-light);
 }
 
 .recently p{
-    color: var(--spf-dark);
+    color: var(--spf-light);
     margin-bottom: 1rem;
     margin-top: -1rem;
 }
@@ -117,10 +124,8 @@
 :root {
     --spf-white: #FFFFFF;
     --spf-black: #000000;
-    --spf-dark: #717479;
-    --spf-light: #3f3e3e94;
-    --spf-accent: #0084fd;
-    --spf-soft-accent: #b5ddff;
+    --spf-dark-light: #282828;
+    --spf-light: #727479;
     --spf-primary:#141922;
   
 }
