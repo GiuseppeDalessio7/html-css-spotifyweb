@@ -1,7 +1,9 @@
 *{
     margin: 0;
-    border: 0;
+    padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 *{
     font-family: 'DM Sans', sans-serif;
@@ -9,22 +11,63 @@
 /* debug class */
 .debug .left_main {
     background-color: aqua;
-    width: 230px;
-    height: 1010px;
+    min-width: 230px;
+    min-height: 1010px;
 }
 
 .debug .right_main {
     background-color:palegoldenrod;
-    width: 1192px;
+    width: 1210px;
     height: 1010px;
 }
 
 .debug .bottom_bar {
     background-color: palevioletred;
-    width: 1140px;
-    height: 89px;
+    width: 1440px;
+    height: 90px;
 }
+
+.debug .upgrade{
+
+    width: 1210px;
+    height: 92px;
+    background-color: bisque;
+}
+
+.choice li {
+    gap: 2rem;
+    padding: 0 0.5rem;
+    color: #717479;
+}
+
+.recently h3{
+    color:var(--spf-white);
+}
+
+.container-main{
+    background-color: var(--spf-primary);
+}
+
 /* Utilities */
-.d_flex{
+.d-flex{
     display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;}
+
+    /* #region utilities */
+
+:root {
+    --spf-white: #FFFFFF;
+    --spf-black: #000000;
+    --spf-dark: #333333;
+    --spf-light: #3f3e3e94;
+    --spf-accent: #0084fd;
+    --spf-soft-accent: #b5ddff;
+    --spf-primary:#141922;
+  
 }
