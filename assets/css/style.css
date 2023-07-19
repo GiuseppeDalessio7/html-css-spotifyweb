@@ -34,19 +34,50 @@
     background-color: bisque;
 }
 
+.container-main{
+    background-color: var(--spf-primary);
+    margin: 0 1rem;
+}
+
+
 .choice li {
     gap: 2rem;
     padding: 0 0.5rem;
-    color: #717479;
+    color: var(--spf-dark);
+    text-transform: uppercase;
 }
 
 .recently h3{
     color:var(--spf-white);
+    padding: 1.5rem 0;
 }
 
-.container-main{
-    background-color: var(--spf-primary);
+.row{
+    width: 100%;
 }
+
+.col{
+    width: calc(100% / 6);
+    aspect-ratio: 1/1;
+}
+
+.card{width: 100%;
+    text-align: center;
+
+}
+
+.card img{
+    max-width: 100%;
+}
+.card h4 {
+    color: var(--spf-white);
+    padding: 1rem 0;
+}
+
+.card p{
+    color: var(--spf-dark);
+}
+
 
 /* Utilities */
 .d-flex{
@@ -59,15 +90,23 @@
 .justify-content-center{
     justify-content: center;}
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
     /* #region utilities */
 
 :root {
     --spf-white: #FFFFFF;
     --spf-black: #000000;
-    --spf-dark: #333333;
+    --spf-dark: #717479;
     --spf-light: #3f3e3e94;
     --spf-accent: #0084fd;
     --spf-soft-accent: #b5ddff;
     --spf-primary:#141922;
   
+}
+
+@media screen and (max-width: 1100) {
+
 }
