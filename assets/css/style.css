@@ -50,6 +50,8 @@
 .recently h3{
     color:var(--spf-white);
     padding: 1.5rem 0;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .row{
@@ -63,6 +65,7 @@
 
 .card{width: 100%;
     text-align: center;
+    margin: 0 1rem;
 
 }
 
@@ -76,6 +79,12 @@
 
 .card p{
     color: var(--spf-dark);
+}
+
+.recently p{
+    color: var(--spf-dark);
+    margin-bottom: 1rem;
+    margin-top: -1rem;
 }
 
 
