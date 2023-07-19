@@ -6,3 +6,25 @@
 *{
     font-family: 'DM Sans', sans-serif;
 }
+/* debug class */
+.debug .left_main {
+    background-color: aqua;
+    width: 230px;
+    height: 1010px;
+}
+
+.debug .right_main {
+    background-color:palegoldenrod;
+    width: 1192px;
+    height: 1010px;
+}
+
+.debug .bottom_bar {
+    background-color: palevioletred;
+    width: 1140px;
+    height: 89px;
+}
+/* Utilities */
+.d_flex{
+    display: flex;
+}
