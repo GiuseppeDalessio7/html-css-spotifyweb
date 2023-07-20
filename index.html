@@ -10,12 +10,97 @@
         <link
             href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;500;700&display=swap"
             rel="stylesheet">
+            <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body class="debug">
         <main class="container d-flex">
-            <div id="left_main">
-                Sidebar
+
+            <div id="left_main" class="d-flex fd-column justify-content-between">
+                <div class="top">
+                    <div class="logo">
+                        <img class="img-fluid" src="./assets/img/logo.svg" alt>
+                    </div>
+                    <!-- /.logo -->
+                    <div class="menu">
+                        <a href class="item">
+                            <img src="./assets/img/home.svg" alt="home icon">
+                            <span>home</span>
+                        </a>
+                        <!-- /.item -->
+                        <a href class="item">
+                            <img src="./assets/img/search.svg" alt="Search icon"">
+                            <span>cerca</span>
+                        </a>
+                        <!-- /.item -->
+                        <a href class="item">
+                            <img src="./assets/img/libreria.svg"
+                                alt="Icona libreria">
+                            <span>la tua libreria</span>
+                        </a>
+                        <!-- /.item -->
+                    </div>
+                    <!-- /.menu -->
+                    <div class="playlist-list">
+                        <h4>Playlist</h4>
+                        <div class="playlists">
+                            <div class="playlist d-flex align-center">
+                                <div class="box">
+                                    <i class="fa-regular fa-square-plus fa-2xl" style="color: #6c7584;"></i>
+                                </div>
+                                <span>Crea Playlist</span>
+                            </div>
+                            <!-- /.playlist -->
+                            <div class="playlist">
+                                <span>nome Playlist</span>
+                            </div>
+                            <!-- /.playlist -->
+
+                            <div class="playlist">
+                                <span>nome Playlist</span>
+                            </div>
+                            <!-- /.playlist -->
+
+                            <div class="playlist">
+                                <span>nome Playlist</span>
+                            </div>
+                            <!-- /.playlist -->
+
+                            <div class="playlist">
+                                <span>nome Playlist</span>
+                            </div>
+                            <!-- /.playlist -->
+
+                            <div class="playlist">
+                                <span>nome Playlist</span>
+                            </div>
+                            <!-- /.playlist -->
+                        </div>
+                        <!-- /.playlists -->
+                    </div>
+                    <!-- /.playlists -->
+                </div>
+                <!-- /.top -->
+                <div class="bottom">
+                    <div class="install_link d-flex align-center">
+                        <img src="./assets/img/download.svg" alt>
+                        <span>Installa app</span>
+                    </div>
+                    <!-- /.install_link -->
+                    <div class="user d-flex align-center">
+                        <div class="box">
+                            <img src="./assets/img/profile.svg" alt>
+                        </div>
+                        <span>John Doe</span>
+                    </div>
+                    <!-- /.user -->
+                </div>
+                <!-- /.bottom -->
+
             </div>
+            <!-- /#left_main -->
             <div class="right_main">
                 <div class="upgrade d-flex justify-content-end">
                     <div>
@@ -38,7 +123,7 @@
                         <div class="recently">
                             <h3>Recently played</h3>
                         </div>
-                        <div class="row d-flex">
+                        <div class="row d-flex flex-wrap">
                             <div class="col-2 col-lg-3 col-md-6">
                                 <div class="card">
                                     <img src="./assets/img/metal_lifting.jpg"
