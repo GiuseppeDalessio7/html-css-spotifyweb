@@ -10,24 +10,32 @@
 }
 
 
+    /* #region utilities */
+
+    :root {
+        --spf-white: #FFFFFF;
+        --spf-black: #000000;
+        --spf-dark-light: #282828;
+        --spf-light: #727479;
+        --spf-primary:#141922;
+      
+    }
+
+
 /* debug class */
-.debug .left_main {
+
+.debug #left_main {
     background-color: var(--spf-black);
-    min-width: 230px;
+    width: 230px;
 }
 
 .debug .right_main {
     background-color:var(--spf-primary);
     width: calc(100vw - 230px);
+    height: calc(100vh - 90px);
     overflow-y: auto;
    
 }
-
-.debug .bottom_bar {
-    background-color: var(--spf-dark-light);
-    height: 90px;
-}
-
 .debug .upgrade{
     position: sticky;
     top: 0;
@@ -36,6 +44,13 @@
     background-color:#00000088;
     padding: 1rem 0.3rem;
 }
+
+.debug .bottom_bar {
+    background-color: var(--spf-dark-light);
+    height: 90px;
+}
+
+
 
 .container-main{
     background-color: var(--spf-primary);
@@ -66,16 +81,12 @@
 
 
 .col{
-   
     aspect-ratio: 1/1;
 }
 
 .card{width: 90%;
     text-align: center;
     margin: 0 -1rem;
-
-  
-
 }
 
 .card img{
@@ -101,7 +112,10 @@
 }
 
 
-
+.col-2 {
+    width: calc(100% / 12 * 2);
+    padding: 1rem;
+}
 
 
 
@@ -146,18 +160,35 @@
 }
 
 
+@media screen and (max-width: 1200px) {
 
-    /* #region utilities */
-
-:root {
-    --spf-white: #FFFFFF;
-    --spf-black: #000000;
-    --spf-dark-light: #282828;
-    --spf-light: #727479;
-    --spf-primary:#141922;
-  
-}
-
-@media screen and (max-width: 1100) {
+    .col-lg-3 {
+        width: calc(100% / 12 * 3);
+    }
 
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 475px) {
+
+        #left_main {
+            width: 50px;
+        }
+
+        .right_main {
+            width: calc(100vw - 50px);
+        }
+
+    }
