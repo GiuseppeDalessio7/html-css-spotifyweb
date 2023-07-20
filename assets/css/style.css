@@ -313,15 +313,5 @@
             width: calc(100vw - 50px);
         }
 
-        #site_main.playlist {
-            display: none;
-        }
-    
-        #site_main .menu {
-            padding: 0 -1rem;
-        }
-    
-        #site_main .logo img{
-            width:100%
-        }
+        
     }
