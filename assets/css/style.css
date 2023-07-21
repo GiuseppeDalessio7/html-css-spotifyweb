@@ -286,9 +286,13 @@
     border-radius: 10rem;
 }
 
-/* .left_menu, .center_menu, .right_menu{
-    width: 33%;
-} */
+.left_menu, .right_menu{
+    width: 25%;
+}
+
+.center_menu{
+    width: 50%;
+}
 
 .left_menu{
     align-items: center;
@@ -357,9 +361,39 @@
     position: absolute;
     top: 0;
     left: 0;
+}
 
+.right_menu{
+    padding: 0 1rem;
+}
+
+.icons{
+    justify-content: flex-end;
+}
+
+.icons i{
+    padding: 0 0.5rem;
+}
+
+.right_menu .bar{
+    width: 100px;
+    height: 5px;
+    background-color:var(--spf-light);
+    border-radius: 20rem;
+    position: relative;}
+
+.right_menu .onbar{
+    width: 20px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
 
 }
+
 
 @media screen and (max-width: 1200px) {
 
