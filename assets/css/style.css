@@ -53,7 +53,7 @@
 }
 
 #left_main .menu a.item:first-child {
-    border-left: 2px solid var(--sw-success);
+    border-left: 2px solid #adff2f;;
     color: var(--sw-white);
 }
 
@@ -142,7 +142,7 @@
 
 #left_main .bottom .user span {
     margin-left: .5rem;
-    color: var(--spf-white)
+    color: var(--spf-dark-light);
 }
 
 
@@ -303,6 +303,12 @@
         width: 50%;
     }
 
+    .choice ul{
+        justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    }
+
 }
 
 
@@ -347,7 +353,7 @@
     #left_main .bottom .user .box {
         border-radius: 50%;
         margin-right: 0.5rem;
-        background-color: var(--spf-light);
+        background-color: var(--spf-dark-light);
     }
 
     #left_main .bottom .install_link img {
@@ -356,4 +362,13 @@
         filter: brightness(50%);
     }
 
+    .install_link span{
+        display: none;
+    }
+
+    #left_main .menu a.item:first-child {
+        color: var(--sw-white);
+        border: 0;
+
+}
 }
