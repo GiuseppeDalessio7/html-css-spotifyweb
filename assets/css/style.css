@@ -286,6 +286,80 @@
     border-radius: 10rem;
 }
 
+/* .left_menu, .center_menu, .right_menu{
+    width: 33%;
+} */
+
+.left_menu{
+    align-items: center;
+}
+
+.left_menu img{
+    padding: 0 1rem;
+    width: 16%;
+}
+
+.bottom_bar{
+    align-items: center;
+}
+
+.song{
+    padding-right:1rem;
+}
+
+.song h6{
+    color: var(--spf-white);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.song p{
+    color: var(--spf-light);
+    font-size: 10px;
+}
+
+.likefold i{
+    padding: 0 5px;
+}
+
+.music{
+    align-items: center;
+}
+
+.music i{
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.playbar{
+    padding: 1rem 0;
+}
+
+.playbar span{
+    color: var(--spf-white);
+    font-size: 10px;
+    padding: 0 1rem;
+}
+
+.bar {width: 400px;
+    height: 5px;
+    background-color:var(--spf-light);
+    border-radius: 20rem;
+    position: relative;}
+
+
+.onbar {
+    width: 100px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
 
 @media screen and (max-width: 1200px) {
 
