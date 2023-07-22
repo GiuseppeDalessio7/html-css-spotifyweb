@@ -442,8 +442,8 @@ li:hover {
     transform: scale(1.1);
 }
 
-.playbar .onbar {
-    width: 100px;
+.right_menu .onbar {
+    width: 80px;
     height: 5px;
     background-color: white;
     border-radius: 20rem;
@@ -452,6 +452,35 @@ li:hover {
     top: 0;
     left: 0;
 }
+
+.right_menu .onbar:hover {
+    width: 80px;
+    height: 5px;
+    background-color: greenyellow;
+    border-radius: 20rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right_menu .bar:hover .onbar-circle{
+    width: 10px;
+    height:10px;
+    background-color:greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: -2px;
+    left:70px;
+    
+
+}
+
+.onbar-circle{
+    display: none;
+}
+
 
 .playbar .onbar:hover {
     width: 100px;
@@ -464,9 +493,6 @@ li:hover {
     left: 0;
 }
 
-/* .onbar-circle{
-    display: none;
-} */
 
 .playbar .bar:hover .onbar-circle {
     width: 10px;
@@ -479,16 +505,6 @@ li:hover {
     left:95px;
 }
 
-.icons .bar:hover .onbar {
-    width: 10px;
-    height:10px;
-    background-color:greenyellow;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: -2px;
-    left: 10px;
-}
 
 .card img:hover {
     transition: 1s;
